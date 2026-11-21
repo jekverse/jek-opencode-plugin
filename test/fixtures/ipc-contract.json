@@ -1,0 +1,20 @@
+{
+  "id": "file-editor.fs.v8",
+  "methods": [
+    "read",
+    "readMedia",
+    "write",
+    "forceWrite",
+    "resolve",
+    "reveal",
+    "list",
+    "exists",
+    "createFile",
+    "createFolder",
+    "copyEntry",
+    "moveEntry",
+    "deleteEntry",
+    "isText",
+    "importFile"
+  ]
+}

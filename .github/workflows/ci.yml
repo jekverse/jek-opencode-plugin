@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    # 0.2.1 shipped a POSIX-only bug because every test base was a Windows path.
+    # The fixtures now cover both families, and this matrix covers the filesystem
+    # differences the fixtures cannot: rename over an open file, chmod, mode bits
+    # and macOS's case-insensitive volumes.
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
