@@ -1,4 +1,4 @@
-# Jek OpenCode Explorer
+# jek-exploler
 
 [![license](https://img.shields.io/github/license/jekverse/jek-opencode-plugin)](https://github.com/jekverse/jek-opencode-plugin/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/jekverse/jek-opencode-plugin?style=flat)](https://github.com/jekverse/jek-opencode-plugin/stargazers)
@@ -54,20 +54,9 @@ These screenshots show the original project's browsing, quick open, and table fe
 
 ## Install
 
-```sh
-opencode plugin add https://github.com/jekverse/jek-opencode-plugin
-```
+Follow the [repository installation guide](README.md#install-on-windows) to clone and build the repo, then add the Explorer root and the `jek-savefromclipboard` directory to OpenCode.
 
-Or add it to your global config so every window has it:
-
-```jsonc
-// ~/.config/opencode/opencode.jsonc
-{
-  "plugins": ["https://github.com/jekverse/jek-opencode-plugin"]
-}
-```
-
-Restart OpenCode Desktop, then open the panel with `Ctrl+Shift+E` (`Cmd+Shift+E` on macOS), `/workspace`, or **+ → Workspace** in the session panel.
+Restart OpenCode Desktop, then open the Explorer panel with `Ctrl+Shift+E` (`Cmd+Shift+E` on macOS), `/workspace`, or **+ → Workspace** in the session panel.
 
 ## Use
 

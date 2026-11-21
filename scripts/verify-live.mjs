@@ -9,7 +9,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { homedir } from "node:os";
 import { join } from "node:path";
 
-const PLUGIN_ID = "file-editor";
+const PLUGIN_ID = "jek-exploler";
 const strict = process.argv.includes("--strict");
 
 function password() {

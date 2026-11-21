@@ -139,7 +139,7 @@ async function uriToPath(uri: string, storageDir: string): Promise<string | null
 }
 
 export default Plugin.define({
-  id: "image-clipboard",
+  id: "jek-savefromclipboard",
   async setup(ctx) {
     const sessionsWithImages = new Set<string>()
 

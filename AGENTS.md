@@ -9,9 +9,7 @@ browser. Published to npm as `opencode-file-editor`.
 It lists the command that proves each kind of claim, the traps that already
 shipped bugs, and what to say when a check cannot be run.
 
-The plugin id is `file-editor`, declared in `src/index.ts`. Changing it renames
-every stored tab key for existing users — do not change it. It is a public id:
-another package claiming it would collide, so treat it as fixed.
+The Explorer plugin id is `jek-exploler`, declared in `index.ts`. The stored tab keys retain the `file-editor` prefix for existing sessions. Do not rename those keys as part of a display-name change.
 
 ## Layout
 
