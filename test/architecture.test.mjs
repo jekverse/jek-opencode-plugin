@@ -100,7 +100,7 @@ test("the + menu shows the panel instead of toggling the region closed", () => {
 });
 
 test("the contract id carries a version suffix", () => {
-  assert.match(source, /id: "file-editor\.fs\.v\d+"/);
+  assert.match(source, /id: "jek-exploler\.fs\.v\d+"/);
 });
 
 test("the shared path fixtures cover both path families", () => {

@@ -12,9 +12,9 @@ import {
 
 test("tab ids round-trip through the host", () => {
   assert.equal(tabId("C:/a.ts"), "file:C:/a.ts");
-  assert.equal(tabKey("C:/a.ts"), "file-editor:file:C:/a.ts");
-  assert.equal(keyFor("open"), "file-editor:open");
-  assert.equal(PLUGIN, "file-editor");
+  assert.equal(tabKey("C:/a.ts"), "jek-exploler:file:C:/a.ts");
+  assert.equal(keyFor("open"), "jek-exploler:open");
+  assert.equal(PLUGIN, "jek-exploler");
   assert.equal(LAUNCHER, "open");
 });
 

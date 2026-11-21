@@ -60,7 +60,7 @@ function contractOf(text) {
 
 test("the Ipc contract id is versioned", () => {
   const { id } = contractOf(source);
-  assert.match(id, /^file-editor\.fs\.v\d+$/);
+  assert.match(id, /^jek-exploler\.fs\.v\d+$/);
 });
 
 test("the Ipc contract matches its recorded id and methods", () => {

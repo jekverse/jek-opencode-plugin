@@ -1,7 +1,7 @@
 import { canonicalPath } from "./paths";
 
 // Tab identity: the host stores these ids and hands them back in `list`.
-export const PLUGIN = "file-editor";
+export const PLUGIN = "jek-exploler";
 export const LAUNCHER = "open";
 export const BROWSER = "browse";
 

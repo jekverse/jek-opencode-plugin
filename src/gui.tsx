@@ -124,7 +124,7 @@ import { revealCommand } from "./reveal";
 const Fs = Ipc.define({
   // Bumped when methods are added: the host keeps the contract registered under
   // an id across plugin reloads, so an old id would answer with the old methods.
-  id: "file-editor.fs.v8",
+  id: "jek-exploler.fs.v8",
   methods: {
     read: {
       input: Schema.Struct({ path: Schema.String, base: Schema.String }),
@@ -3283,7 +3283,7 @@ export default Plugin.define({
     },
   },
   setup(ctx) {
-    console.log("[file-editor] gui v63");
+    console.log("[file-editor] gui v64");
     const fs = ctx.main(Fs);
 
     ctx.add(Panel, {
